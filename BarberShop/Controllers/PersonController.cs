@@ -1,6 +1,7 @@
 ﻿using BarberShop.Models;
 using BarberShop.Repository;
 using BarberShop.Utility;
+using BarberShop.Utility.Resources;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BarberShop.Controllers
@@ -27,7 +28,7 @@ namespace BarberShop.Controllers
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                throw new Exception(Exceptions.EXC004, ex);
             }
         }
 
@@ -42,7 +43,7 @@ namespace BarberShop.Controllers
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao recuperar usuário pelo Id.", ex);
+                throw new Exception(Exceptions.EXC001, ex);
             }
         }
 
@@ -56,11 +57,11 @@ namespace BarberShop.Controllers
 
                 await _appDbContext.SaveChangesAsync();
 
-                return Ok("Usuário adicionado com sucesso");
+                return Ok(Messages.MSG001);
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao adicionar usuário", ex);
+                throw new Exception(Exceptions.EXC002, ex);
             }
         }
 
@@ -76,11 +77,11 @@ namespace BarberShop.Controllers
                     return BadRequest();
 
                 await _appDbContext.SaveChangesAsync();
-                return Ok("Usuário Deletado com Sucesso");
+                return Ok(Messages.MSG001);
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(Exceptions.EXC003, ex);
             }
         }
     }

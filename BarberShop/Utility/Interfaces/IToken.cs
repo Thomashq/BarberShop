@@ -1,9 +1,10 @@
 ﻿using BarberShop.Models;
+using System.Security.Claims;
 
 namespace BarberShop.Utility.Interfaces
 {
     public interface IToken
     {
-        bool GenerateToken(Person person);
+        void GenerateToken(IEnumerable<Claim> claims);
     }
 }
