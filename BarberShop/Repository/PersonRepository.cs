@@ -64,6 +64,14 @@ namespace BarberShop.Repository
                 person.Pwd = passwordEncryption.Encrypt(person.Pwd);
 
                 _appDbContext.Add(person);
+                
+                if(person.Role == Enuns.Role.Barber)
+                {
+                    PersonBarber personBarber = new PersonBarber();
+                    personBarber.PersonId = person.Id;
+                    personBarber.CreationDate = DateTime.Now;
+                    _appDbContext.PersonBarber.Add(personBarber);
+                }
 
                 return person;
             }

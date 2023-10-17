@@ -12,6 +12,8 @@ namespace BarberShop.Utility
 
         public DbSet<Person> Person { get; set; }
 
+        public DbSet<PersonBarber> PersonBarber { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

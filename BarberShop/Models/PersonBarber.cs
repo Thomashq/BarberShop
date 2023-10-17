@@ -2,6 +2,6 @@
 {
     public class PersonBarber: BaseModel
     {
-        public long BarberId { get; set; }
+        public long PersonId { get; set; }
     }
 }

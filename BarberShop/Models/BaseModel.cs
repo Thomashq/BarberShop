@@ -24,8 +24,10 @@ namespace BarberShop.Models
             }
         }
 
-        public DateOnly CreationDate { get; set; }
+        public DateTime CreationDate { get; set; }
 
-        public DateOnly? UpdateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
+
+        public DateTime? DeletionDate { get; set; }
     }
 }
