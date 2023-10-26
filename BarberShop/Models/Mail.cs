@@ -1,4 +1,5 @@
-﻿namespace BarberShop.Models
+﻿
+namespace BarberShop.Models
 {
     public class Mail
     {

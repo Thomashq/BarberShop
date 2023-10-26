@@ -77,5 +77,23 @@ namespace BarberShop.Utility.Resources {
                 return ResourceManager.GetString("MSG002", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Usuário logado sucesso...
+        /// </summary>
+        public static string MSG003 {
+            get {
+                return ResourceManager.GetString("MSG003", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Confirmação de registro....
+        /// </summary>
+        public static string MSG004 {
+            get {
+                return ResourceManager.GetString("MSG004", resourceCulture);
+            }
+        }
     }
 }

@@ -8,10 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BarberShop.Utility.Resources {
+namespace BarberShop.Utility.Resources
+{
     using System;
-    
-    
+
+
     /// <summary>
     ///   Uma classe de recurso de tipo de alta segurança, para pesquisar cadeias de caracteres localizadas etc.
     /// </summary>
@@ -22,77 +23,148 @@ namespace BarberShop.Utility.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Exceptions {
-        
+    public class Exceptions
+    {
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Exceptions() {
+        internal Exceptions()
+        {
         }
-        
+
         /// <summary>
         ///   Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        public static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BarberShop.Utility.Resources.Exceptions", typeof(Exceptions).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Substitui a propriedade CurrentUICulture do thread atual para todas as
         ///   pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
-            get {
+        public static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Erro ao recuperar elemento pelo Id..
         /// </summary>
-        public static string EXC001 {
-            get {
+        public static string EXC001
+        {
+            get
+            {
                 return ResourceManager.GetString("EXC001", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Erro ao adicionar elemento..
         /// </summary>
-        public static string EXC002 {
-            get {
+        public static string EXC002
+        {
+            get
+            {
                 return ResourceManager.GetString("EXC002", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Erro ao deleter elemento..
         /// </summary>
-        public static string EXC003 {
-            get {
+        public static string EXC003
+        {
+            get
+            {
                 return ResourceManager.GetString("EXC003", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Erro ao recuperar elementos..
         /// </summary>
-        public static string EXC004 {
-            get {
+        public static string EXC004
+        {
+            get
+            {
                 return ResourceManager.GetString("EXC004", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Usuário ou senha inválidos. Tente novamente..
+        /// </summary>
+        public static string EXC005
+        {
+            get
+            {
+                return ResourceManager.GetString("EXC005", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível registrar usuário, tente novamente mais tarde...
+        /// </summary>
+        public static string EXC006
+        {
+            get
+            {
+                return ResourceManager.GetString("EXC006", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível gerar o Token de acesso...
+        /// </summary>
+        public static string EXC007
+        {
+            get
+            {
+                return ResourceManager.GetString("EXC007", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível salvar o Token de acesso...
+        /// </summary>
+        public static string EXC008
+        {
+            get
+            {
+                return ResourceManager.GetString("EXC008", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Não foi possível gerar QRCode....
+        /// </summary>
+        public static string EXC009
+        {
+            get
+            {
+                return ResourceManager.GetString("EXC009", resourceCulture);
             }
         }
     }

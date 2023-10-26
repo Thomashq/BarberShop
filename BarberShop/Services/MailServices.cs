@@ -27,7 +27,7 @@ namespace BarberShop.Services
                     Password = _configuration.GetValue<string>("MailApiConfig:Password"),
                     Port = _configuration.GetValue<int>("MailApiConfig:Port"),
                     MailFrom = _configuration.GetValue<string>("MailApiConfig:MailFrom"),
-                    MailTo = _configuration.GetValue<string>("MailApiConfig:MailTo")
+                    MailTo = mail.MailContact
                 };
 
                 MailMessage mailMessage = new MailMessage()

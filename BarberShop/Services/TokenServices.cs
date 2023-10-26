@@ -1,10 +1,7 @@
-﻿using BarberShop.Models;
-using BarberShop.Utility;
+﻿using BarberShop.Utility;
 using BarberShop.Utility.Interfaces;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
+using BarberShop.Utility.Resources;
 using Microsoft.IdentityModel.Tokens;
-using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -49,7 +46,7 @@ namespace BarberShop.Services
             }
             catch (Exception ex)
             {
-                throw new Exception(Exceptions.EXC21, ex);
+                throw new Exception(Exceptions.EXC007, ex);
             }
         }
 
@@ -57,7 +54,7 @@ namespace BarberShop.Services
         {
             try
             {
-                IHttpContextAccessor.HttpContext.Response.Cookies.Append("token_auth", encryptedToken,
+                _httpContextAccessor.HttpContext.Response.Cookies.Append("token_auth", encryptedToken,
                     new CookieOptions
                     {
                         Expires = DateTime.Now.AddHours(3),
@@ -69,7 +66,7 @@ namespace BarberShop.Services
             }
             catch (Exception ex)
             {
-                throw new Exception(Exceptions.EXC23);
+                throw new Exception(Exceptions.EXC007);
             }
         }
     }

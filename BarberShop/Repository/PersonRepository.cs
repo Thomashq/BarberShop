@@ -1,5 +1,6 @@
 ﻿using BarberShop.Models;
 using BarberShop.Utility;
+using BarberShop.Utility.Resources;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BarberShop.Repository
@@ -28,7 +29,7 @@ namespace BarberShop.Repository
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro ao encontrar o usuário", ex);
+                throw new Exception(Exceptions.EXC005, ex);
             }
         }
 
@@ -40,7 +41,7 @@ namespace BarberShop.Repository
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao recuperar usuário pelo Id.", ex);
+                throw new Exception(Exceptions.EXC001, ex);
             }
         }
 
@@ -52,7 +53,7 @@ namespace BarberShop.Repository
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                throw new Exception(Exceptions.EXC004, ex);
             }
         }
 
@@ -77,7 +78,7 @@ namespace BarberShop.Repository
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                throw new Exception(Exceptions.EXC002, ex);
             }
         }
 
@@ -90,14 +91,14 @@ namespace BarberShop.Repository
                 if (personToDelete != null)
                 {
                     _appDbContext.Person.Remove(personToDelete);
-                    return "Objeto deletado com sucesso"; //substituir a string depois
+                    return Messages.MSG002; //substituir a string depois
                 }
 
                 return null;
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                throw new Exception(Exceptions.EXC003, ex);
             }
         }
     }
